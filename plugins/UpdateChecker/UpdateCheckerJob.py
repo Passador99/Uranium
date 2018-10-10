@@ -69,8 +69,8 @@ class UpdateCheckerJob(Job):
                             if local_version < newest_version:
                                 Logger.log("i", "Found a new version of the software. Spawning message")
 
-                                title_message = i18n_catalog.i18nc("@info:status","Cura {0} is available!", newest_version)
-                                content_message = i18n_catalog.i18nc("@info:status","Cura {0} provides better and reliable printing experience.", newest_version)
+                                title_message = i18n_catalog.i18nc("@info:status","Continuum {0} is available!", newest_version)
+                                content_message = i18n_catalog.i18nc("@info:status","Continuum {0} provides better and reliable printing experience.", newest_version)
 
                                 message = Message(text = content_message, title = title_message)
                                 message.addAction("download", i18n_catalog.i18nc("@action:button", "Download"), "[no_icon]", "[no_description]")
